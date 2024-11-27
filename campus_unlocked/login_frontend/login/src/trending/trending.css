@@ -1,0 +1,41 @@
+.trending_container{
+    margin-left: 34%;
+}
+
+.trending_location{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.trending_caption{
+    text-align: center;
+    font-size: 20px;
+}
+
+.trending_caption_desc{
+    text-align: center;
+    font-size: 20px;
+    /* margin-bottom: 50px; */
+}
+
+.trending_likes{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+
+.trending_no_img{
+    text-align: center;
+  }
+
+  .img_trending{
+    border-radius: 15px;
+  }
+
+  .h1_trending{
+    text-align:center;
+  }
+

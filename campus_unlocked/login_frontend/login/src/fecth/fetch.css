@@ -1,0 +1,47 @@
+.fetch_container{
+    margin-left: 34%;
+}
+
+.caption{
+    text-align: center;
+    font-size: 20px;
+}
+
+.caption_desc{
+    text-align: center;
+    font-size: 20px;
+    /* margin-bottom: 50px; */
+}
+
+.likes{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.no_img{
+    text-align: center;
+  }
+
+  .img_fetch{
+    border-radius: 15px;
+  }
+
+.heart{
+    /* background-color: #dad4d1; */
+    /* border-color: #dad4d1; */
+    width: 30px;
+}
+
+.like_button{
+    /* height: 20px; */
+    background-color: #dad4d1;
+    border: none;
+    margin-bottom: 50px;
+    /* margin-top: -6px; */
+    margin-left: 45.2%;
+}
+
+.like_button:hover{
+    transform:scale(1.1);
+}

@@ -1,0 +1,160 @@
+body {
+  background-color: #dad4d1!important;
+  
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+}
+       
+.custom-font{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+}
+.abs-center-x {
+  position: absolute;
+  left: 50%;
+  vertical-align: middle;
+  transform: translateX(-50%);
+}
+/* Style header */
+
+
+.logo {
+  height: 205px;
+  width: 210px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style main content */
+main {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #dad4d1;
+  /* margin-top: 45px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading_home {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  /* background-color: #eeffc8; */
+  /* padding-top: 5rem;  */
+  font-size: 50px;
+  /* padding-top: 0px; */
+  margin-top: 90px;
+  color: #040404;
+  text-align: center; /* center align */
+}
+
+.description_home {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  font-size:25px;
+  /* background-color: #dad4d1; */
+  width: 75%;
+  /* padding: 20px; */
+  /* margin: 0 auto 100px auto; */
+  text-align: justify; /* center align */
+}
+
+.heading_visitas {
+  position: absolute;
+  top: 550px;
+}
+a{
+  text-decoration: none;
+}
+.a_home{
+  color:black;
+  text-decoration: none!important;
+}
+
+.a_home:hover{
+  color:black;
+}
+
+.visit-options-container_home1 {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+  bottom: 8px;
+  font-size: 20px;
+  transform:translateX(-50%);
+  border-radius: 15px;
+  background-color: #b1937a;
+  text-decoration: none!important;
+ 
+}
+
+.visit-options-container_home1:hover{
+  color: black;
+  /* transform:scale(1.1); */
+  text-shadow: 1px 1px 5px white;
+}
+.visit-options_home {
+  position: absolute;
+  left: 500px;
+  top: 600px;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  /* background-color: #fffec8; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;      
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none!important;
+}
+
+.option {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #dad4d1;
+        
+  font-size: 24px;
+  padding: 10px;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  text-align: center; /* center align */
+}
+.home_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(203, 138, 10, 0.849); */
+  /* color: #b1937a; */
+  margin-left: -9px;
+  margin-top: -10px;
+  object-fit:fill ;
+  height: 100px;
+  background-color: #b1937a;
+}
+
+.home_campus{
+  position: absolute;
+  color: black;
+  left: 500px;
+}
+
+.logo_homepage{
+  position: absolute;
+  top: 130px;
+  width: 150px;
+}
+
+.desc_box{
+  border: black;
+  border: 2px;
+  /* margin-top: 300px; */
+  height: 300px;
+  width: 700px;
+  z-index: -1;
+}
+
+  

@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    background-color: rgba(214, 184, 51, 0.547);
+  }
+  
+  .select-box {
+    width: 10rem; /* adjust this value as needed */
+    height: 2.5rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin-left: -100px;
+  }
+  
+  .home-button {
+    width: 10rem; /* adjust this value as needed */
+    height: 2.5rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: rgb(6, 20, 20);
+    background-color: aqua;
+  }
+  .logo {
+    width:5rem;
+  }
+  .campus {
+    margin-left: -150px;
+  }
+  .home-button:hover {
+    background-color: #ccc;
+    transform:scale(1.1);
+  }
+  .each-slide {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .each-slide>div {
+    width: 75%;
+  }
+  
+  .each-slide>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .i{
+    margin-left: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  .each-slide p {
+    width: 25%;
+    font-size: 1em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #adceed;
+  }
+
+  .slide{
+    display: 'flex';
+  align-items : 'center';
+  /* justify-content: 'center'; */
+  /* background-size: 'cover'; */
+  height: '100px';
+  }
+
+  .pages_h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b1937a;
+  }
+  
+  .h2_pages{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b1937a;
+    margin-top: -100px;
+  }

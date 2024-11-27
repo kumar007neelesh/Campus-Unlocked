@@ -1,0 +1,24 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sathwik",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.21",
+    "randomstring": "^1.2.3",
+    "react-router-dom": "^6.9.0",
+    "validator": "^13.9.0"
+  }
+}

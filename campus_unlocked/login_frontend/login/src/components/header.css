@@ -1,0 +1,40 @@
+.all_top {
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(203, 138, 10, 0.849); */
+  /* color: #b1937a; */
+  object-fit:fill ;
+  height: 100px;
+  width: 100%;
+  margin-top: -10px;
+  margin-left: -9px;
+  background-color: #b1937a;
+}
+.logo_header {
+  margin-left: 10px;
+  width:70px;
+
+}
+.all_campus{
+  /* margin-top: 10px; */
+  margin-left: 15%;
+  font-weight: bold;
+}
+.header_button {
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 23px;
+  margin-right: 10px;
+  font-weight:bold;
+  color: rgb(6, 20, 20);
+  background-color: #d1b7a1;
+}
+.header_button:hover {
+  background-color: #b1937a;
+  transform:scale(1.1);
+}
+
+

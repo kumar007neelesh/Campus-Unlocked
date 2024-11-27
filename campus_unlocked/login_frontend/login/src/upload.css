@@ -1,0 +1,332 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #dad4d1;
+    padding: 0;
+}
+
+.h2_upload {
+    font-family: 'Montserrat';
+    color: #b1937a;
+    padding-top: 80px;
+    font-size: 50px;
+    text-align: center;
+    z-index: 1;
+}
+
+.container_up {
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+}
+/* Upload Button */
+
+.wrap {
+    position: absolute;
+    top: 580px;
+    display: block;
+    z-index: 1;
+}
+
+.wrap a {
+    display: block;
+    margin: 1em auto;
+    width: 200px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    padding: 16px;
+    border: 1px solid #fcfcfc;
+    z-index: 20;
+    transition: all 0.35s cubic-bezier(1, 0, 0, 1);
+}
+
+.btn:hover {
+    color: #fcfcfc;
+}
+
+.btn-color {
+    border-color: #b1937a;
+    color: #b1937a;
+}
+
+.btn-color::before,
+.btn-color::after {
+    background: #b1937a;
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s cubic-bezier(1, 0, 0, 1);
+}
+
+.btnFillup {
+    display: block;
+    padding: 16px;
+    overflow: hidden;
+    color: #b1937a;
+    text-decoration: none;
+    border: 1px solid #b1937a;
+    border-radius: 5px;
+    background-position: 0 -100%;
+    background-repeat: repeat-x;
+    transition: background-position 0.8s ease;
+}
+
+.btnFillup:hover {
+    background-position: 100% 50%;
+    border-color: #b1937a;
+    color: #fcfcfc;
+}
+
+.liquidbg {
+    background-image: url('Orange\ Liquid.jpg');
+}
+/* text boxes*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.custom-field {
+    position: absolute;
+    display: block;
+    font-size: 14px;
+    /* left: 40%; */
+    border-top: 20px solid transparent;
+    z-index: 1;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    display: block;
+    --field-padding: 12px;
+}
+
+.one-position {
+    top: 350px;
+}
+
+.two-position {
+    top: 420px;
+}
+
+.custom-field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: var(--field-padding);
+    border-radius: 5px;
+    width: 300px;
+    outline: none;
+    font-size: 14px;
+}
+
+.custom-field .placeholder {
+    position: absolute;
+    left: var(--field-padding);
+    width: calc(100% - (var(--field-padding) * 2));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 22px;
+    line-height: 100%;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.custom-field input.dirty+.placeholder,
+.custom-field input:focus+.placeholder,
+.custom-field input:not(:placeholder-shown)+.placeholder {
+    top: -10px;
+    font-size: 10px;
+    color: #222;
+}
+
+.custom-field .error-message {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    font-size: 12px;
+    background: #d30909;
+    color: #fff;
+    height: 24px;
+}
+
+.custom-field .error-message:empty {
+    opacity: 0;
+}
+/* ONE */
+
+.custom-field.one input {
+    background: none;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.custom-field.one input+.placeholder {
+    left: 8px;
+    padding: 0 5px;
+}
+
+.custom-field.one input.dirty,
+.custom-field.one input:not(:placeholder-shown),
+.custom-field.one input:focus {
+    border-color: #222;
+    transition-delay: 0.1s
+}
+
+.custom-field.one input.dirty+.placeholder,
+.custom-field.one input:not(:placeholder-shown)+.placeholder,
+.custom-field.one input:focus+.placeholder {
+    top: 0;
+    font-size: 10px;
+    color: #222;
+    background: #fff;
+    width: auto
+}
+
+span.msg,
+span.choose {
+    color: #555;
+    padding: 5px 0 10px;
+    display: inherit
+}
+/* Choose Photo */
+
+.drop-container {
+    position: absolute;
+    display: flex;
+    /* left: 40%; */
+    gap: 10px;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    top: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px dashed #555;
+    color: #444;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover {
+    background: #eee;
+    border-color: #111;
+}
+
+.drop-container:hover .drop-title {
+    color: #222;
+}
+
+.drop-title {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+}
+
+input[type=file] {
+    width: 350px;
+    max-width: 100%;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #d1b7a1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #b1937a;
+}
+/* Dropdown Menu */
+
+select {
+    /* Reset */
+    position: absolute;
+    /* appearance: none; */
+    border: 10px black;
+    outline: 10px black;
+    font: inherit;
+    z-index: 1;
+    /* Personalize */
+    width: 300px;
+    top: 300px;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* <option> colors */
+}
+
+select option {
+    color: inherit;
+    background-color: white;
+    /* Remove focus outline */
+}
+
+select:focus {
+    outline: none;
+    /* Remove IE arrow */
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.rectangle_upload {
+    position: absolute;
+    margin-top: 7%;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 600px;
+    z-index: -1;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.uploadbutton {
+    position: absolute;
+    z-index: 1;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    top: 720px;
+    border-radius: 10px;
+    background-color: #d1b7a1;
+}
+
+.uploadbutton:hover{
+    background-color: #b1937a;
+    transform:scale(1.1);
+}

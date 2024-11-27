@@ -1,0 +1,101 @@
+.comp_dropdown>#dropdown {
+    position: absolute;
+    top:250px;
+    left: 38%;
+    /* margin-top: 100px; */
+    background-color: #000000;
+    /* margin-left: 560px; */
+    min-width: none;
+    /* margin-bottom: 50px; */
+}
+
+.comp_dropdown>select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 20em;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    color: rgb(255, 248, 248);
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em, linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.comp_dropdown>select option {
+    color: inherit;
+    background-color: #320a28;
+}
+
+.comp_dropdown>select:focus {
+    outline: none;
+}
+
+.comp_dropdownselect::-ms-expand {
+    display: none;
+}
+
+#image_tag {
+    position: absolute;
+    /* padding-top: 50px;
+    padding-left: 600px; */
+    /* left: 100px; */
+    top: 500px;
+    text-align: center;
+}
+
+#image_tag>.distance {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+#image_tag>.distance:hover {
+    color: rgb(94, 26, 157);
+}
+
+#image_tag>.time {
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#image_tag>.time:hover {
+    color: rgb(94, 26, 157);
+}
+
+.image_tag {
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    border-radius: 50%;
+    /* margin-left: 520px; */
+}
+
+.image_tag:hover {
+    border: 2px solid #777;
+}
+
+.distance, .time{
+    text-align: center;
+}
+.loc_name{
+    color:#000000;
+    text-align: center;
+    font-size: 30px;
+    /* margin-top: -10px; */
+}
+
+#image-container{
+    /* display: flex; */
+    position: absolute;
+    top: 250px;
+    left:35%;
+    align-self: center;
+    /* justify-content: space-evenly; */
+}
